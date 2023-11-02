@@ -1,0 +1,98 @@
+body {
+  font-family: "Segoe UI";
+  background: url('img_books.jpg');
+}
+
+div {
+  width: 50%;
+  height: 50%;
+  background: rgba(135, 206, 235, 0.5);
+  border: 5px solid lightgreen;
+  margin: auto;
+  margin-bottom: 5px;
+  text-align: center;
+  border-radius:  10px;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
+  margin: 5px;
+  font-family: verdana;
+  border-radius:  10px;
+}
+
+button:hover {
+  background: rgb(192, 128, 129);
+  color: white;
+}
+
+button:active {
+  background: white;
+  color: black;
+}
+
+.version {
+  width: 50px;
+  height: 30px;
+  color: black;
+}
+
+a {
+  font-family: verdana;
+}
+
+button.search {
+  width: auto;
+  height: 30px;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+}
+
+input{
+  height: 20px;
+  margin: 5px;
+  border: 2px solid blue;
+}
+
+.results {
+  margin: auto;
+  border: 0px solid black;
+  text-align: center;
+  background: rgba(0, 0, 0, 0);
+}
+
+.top-panel {
+  background:  rgba(135, 206, 235, 0.8);
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  border: 2px solid black;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 18%;
+  border-radius: 0px;
+}
+
+img.logo {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.ABM {
+  margin-top: 8em;
+}
+
+.footers {
+  width: 60px;
+  height: 30px;
+  color: black;
+}
