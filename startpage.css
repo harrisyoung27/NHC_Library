@@ -139,7 +139,7 @@ button {
 }
 
 button:hover {
-	transform: translateY(5px) translateX(5px);
+	transform: translateY(5px);
 	color: blue;
 	background: lightseagreen;
 	border: solid 3px blue;
