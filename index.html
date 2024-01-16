@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NHCHS Library</title>
-    <link rel="stylesheet" href="./startpage.css">
-    <link rel="icon" href="img_nhc.jpg" type="img_nhc.jpg">
+    <title>Log in</title>
+    <link rel="stylesheet" href="./login.css" src="login.css">
+    <link rel="icon" href="img_nhc.jpg" type="image/x-icon">
   </head>
-  <body>
-    <main id="page" class="startpage">
-    	<div class="title">
-        <h1>Welcome to NHC High School Library!</h1>
-    </div>
-    <div class="description">
-    	<h2>DISCLAIMER:<h2>
-    		<p>This Web Based Library is only for the navigation and overview of the contents that can be found in NHC High School Library. The Full access of every content are only exclusive and can only be found in the National Housing Corporation High School Library.</p>
-    </div>
-    <div class="selections"> 
-    	<button class="confirm" type="button" onclick="homepage()">OK</button>
-    </div>
-    </main>
-    <footer>
-      <button class="applogo" id="facebook" onclick="facebook()">
-      <b> f </b>
-    </button>
-      <div class="footer">
-        <p> Originally Created by <b>Harry Luis Young</b><p>
+  <header>
+      <div class="top-panel">
+        <img class="logo" src="img_nhc.jpg">
+        <h1>National Housing Corporation Highschool Library</h1>
       </div>
-    </footer>
+    </header>
+    <main>
+      <div class="topblock">
+        <img class="logo" src="img_nhc.jpg">
+        <h1>National Housing Corporation Highschool Library</h1>
+    </div>
+  <body>
+    <div class="selections">
+    <div class="login">
+      <h1>Log in</h1>
+      <form>
+        <label for="LRN"><p><b>LRN</b></p></label>
+        <input type="name" name="reference" id="lrn" placeholder="LRN" style="text-align: center;" required />
+        <label for="password"><p><b>Password</b></p></label>
+        <input type="password" name="password" id="password" placeholder="Password" style="text-align: center;" required />
+      </form>
+      <a href="register.html"><button><p><b>Register</b></p></button></a>
+      <a href="homepage.html"><button><b>Log in</b></button></a>
+    </div>
+  </div>
+    <script src="main_script.js"></script>
   </body>
-  <script src="startpage.js" href="startpage.js">
-  </script>
-</html>
+  </html>
