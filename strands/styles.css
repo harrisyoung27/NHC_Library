@@ -1,0 +1,198 @@
+body {
+  background: black;
+  align-items: start;
+  font-family: "Segoe UI";
+  text-align: center;
+}
+
+div {
+  width: 40em;
+  height: 50%;
+  background: rgba(135, 206, 235, 0.5);
+  border: 5px solid lightgreen;
+  margin: auto;
+  margin-bottom: 5px;
+  padding: auto;
+  border-radius: 10px;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+  border: solid 2px skyblue;
+  color: skyblue;
+  background: black;
+  transition: transform 0.3s;
+  margin: 5px;
+  border-radius: 10px;
+  font-family: verdana;
+  border-radius: 10px;
+  font-size: 14px;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: translateY(2px);
+  color: blue;
+  background: lightseagreen;
+  border: solid 2px blue;
+}
+
+button:active {
+  transform: scale(0.95);
+  color: skyblue;
+  background: green;
+  border: solid 2px skyblue;
+}
+
+.version {
+  width: 50px;
+  height: 30px;
+  color: black;
+}
+
+a {
+  font-family: verdana;
+}
+
+button.search {
+  width: auto;
+  height: 30px;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+}
+
+input{
+  height: 20px;
+  margin: 5px;
+  border: 2px solid blue;
+}
+
+.results {
+  margin: auto;
+  border: 0px solid black;
+  text-align: center;
+  background: rgba(0, 0, 0, 0);
+}
+
+.top-panel {
+  background:  rgba(135, 206, 235, 0.8);
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  border: 2px solid black;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  animation: DownToUp 1s ease 0s normal;
+}
+
+img.logo {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+.top {
+  animation: DownToUp 1.2s ease 0s normal;
+}
+
+.body {
+  animation: DownToUp 1.4s ease 0s normal;
+}
+
+.footer {
+  animation: DownToUp 1.6s ease 0s normal;
+}
+
+.pass {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.topblock {
+  background:  rgba(135, 206, 235, 0);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  border: 2px solid black;
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
+
+@keyframes DownToUp {
+  0% {
+    opacity: 0%;
+    transform: translateY(50px);
+  }
+
+  75% {
+    opacity: 0%;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
+@keyframes LeftToRight {
+  0% {
+    opacity: 0%;
+    transform: translateX(-100px);
+  }
+
+  90% {
+    opacity: 0%;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+@keyframes UpToDown {
+  0% {
+    opacity: 0%;
+    transform: translateY(-100px);
+  }
+
+  90% {
+    opacity: 0%;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
+@keyframes RightToLeft {
+  0% {
+    opacity: 0%;
+    transform: translateX(100px);
+  }
+
+  90% {
+    opacity: 0%;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}

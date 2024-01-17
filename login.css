@@ -1,5 +1,101 @@
 body {
-  background: url('img_books.jpg');
+  background: /* url('img_books.jpg') */ black;
+  align-items: start;
+  font-family: "Segoe UI";
+  text-align: center;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+  border: solid 2px skyblue;
+  color: skyblue;
+  background: black;
+  transition: transform 0.3s;
+  margin: 5px;
+  border-radius: 10px;
+  font-family: verdana;
+  border-radius: 10px;
+  font-size: 14px;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: translateY(2px);
+  color: blue;
+  background: lightseagreen;
+  border: solid 2px blue;
+}
+
+button:active {
+  transform: scale(0.95);
+  color: skyblue;
+  background: green;
+  border: solid 2px skyblue;
+}
+
+.footers {
+  width: 70px;
+  height: 30px;
+  color: skyblue;
+  background: black;
+}
+
+::selection {
+  color: blue;
+  background: yellow;
+}
+
+.top-panel {
+  background:  rgba(135, 206, 235, 0.8);
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  border: 2px solid black;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-width: 50%;
+  height: auto;
+  border-radius: 0px;
+  z-index: 3;
+  animation: UpToDown 1s ease 0s normal;  
+}
+
+img.logo {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.select-strand {
+  border: 0px solid;
+  background: rgba(0, 0, 0, 0);
+  margin: auto;
+}
+
+.topblock {
+  background:  rgba(135, 206, 235, 0.8);
+  display: flex;
+  align-items: center;
+  margin-top: 0em;
+  border: 2px solid black;
+  min-width: 50%;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  z-index: 3;
+  opacity: 0;
 }
 
 .sign-up {
@@ -14,7 +110,7 @@ body {
 }
 
 .login {
-  width: 40%;
+  width: 30em;
   height: auto;
   background: rgba(135, 206, 235, 0.5);
   border: 5px solid lightgreen;
@@ -24,32 +120,65 @@ body {
   text-align: center;
 }
 
+.selections {
+  animation: DownToUp 0.5s ease 0s normal;
+}
+
+@keyframes DownToUp {
+  0% {
+    opacity: 0%;
+    transform: translateY(50px);
+  }
+
+  75% {
+    opacity: 0%;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
+  
 input {
   height: 30px;
-  width: 50%;
+  width: 30em;
   margin: 2px;
   border: 1px solid black;
   border-radius: 10px;
+  text-align: center;
 }
 
 button {
-  width: 200px;
+  width: 250px;
   height: 50px;
-  background: rgba(255, 255, 255, 0.5);
-  border: 2px solid black;
-  margin: 10px;
+  border: solid 2px skyblue;
+  color: skyblue;
+  background: black;
+  transition: transform 0.3s;
+  margin: 5px;
+  border-radius: 10px;
   font-family: verdana;
   border-radius: 10px;
+  font-size: 14px;
+  position: flex;
+  z-index: 1;
+  transition: transform 0.3s;
 }
 
 button:hover {
-  background: rgb(192, 128, 129);
-  color: white;
+  transform: translateY(2px);
+  color: blue;
+  background: lightseagreen;
+  border: solid 3px blue;
 }
 
 button:active {
-  background: white;
-  color: black;
+  transform: scale(0.95);
+  color: skyblue;
+  background: green;
+  border: solid 3px skyblue;
 }
 
 p, h1 {
@@ -58,7 +187,7 @@ p, h1 {
 
 label {
   font-family: verdana;
-  tect-align: left;
+  tect-align: center;
   margin: auto;
 }
 
