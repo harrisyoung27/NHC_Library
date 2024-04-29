@@ -10,7 +10,6 @@ function goBack() {
             // Check if the email and password are correct for either account
             if ((email === "user@example.com" && password === "Admin1234") ||
                 (email === "anotheruser@example.com" && password === "AnotherPassword") ||
-                (email === "ally@NHC.org" && password === "calliemiller") ||
                 (email === "136799120242" && password === "idomypromises27")) {
                 alert("Authentication successful!");
                 location.href="homepage.html"
